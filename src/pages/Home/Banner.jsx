@@ -11,13 +11,13 @@ const Banner = () => {
             animate={{ y: [0, 50, 0] }}
             transition={{ duration: 3, repeat: Infinity }}
             src={team1}
-            className="max-w-sm rounded-t-3xl border-blue-800 border-l-8 border-b-8 rounded-br-3xl shadow-2xl"
+            className="max-w-sm rounded-t-3xl border-blue-800 border-l-8 border-b-8 shadow-2xl"
           />
           <motion.img
             animate={{ x: [100, 150, 100] }}
             transition={{ duration: 5, repeat: Infinity }}
             src={team2}
-            className="max-w-sm rounded-t-3xl border-blue-800 border-l-8 border-b-8 rounded-br-3xl shadow-2xl"
+            className="max-w-sm rounded-t-3xl border-blue-800 border-l-8 border-b-8 shadow-2xl"
           />
         </div>
         <div className="flex-1">
@@ -33,7 +33,7 @@ const Banner = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <button className="btn btn-primary">Get Started</button>
+          <button className="btn bg-white text-black">Get Started</button>
         </div>
       </div>
     </div>

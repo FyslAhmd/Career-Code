@@ -4,16 +4,16 @@ import AuthContext from "../../contexts/AuthContext";
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
-  
+
   const links = (
     <>
-      <NavLink className="btn" to="/">
+      <NavLink className="btn bg-white text-black md:mr-2" to="/">
         Home
       </NavLink>
-      <NavLink className="btn" to="/">
+      <NavLink className="btn bg-white text-black md:mr-2" to="/">
         About
       </NavLink>
-      <NavLink className="btn" to="/">
+      <NavLink className="btn bg-white text-black md:mr-2" to="/">
         Contact
       </NavLink>
     </>
@@ -56,22 +56,22 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Career Code</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         {user ? (
-          <Link onClick={handleSignOut} className="btn">
+          <Link onClick={handleSignOut} className="btn bg-white text-black">
             Log Out
           </Link>
         ) : (
           <>
-            <Link className="btn" to="/login">
+            <Link className="btn bg-white text-black md:mr-2" to="/login">
               Login
             </Link>
-            <Link className="btn" to="/register">
+            <Link className="btn bg-white text-black" to="/register">
               Register
             </Link>
           </>

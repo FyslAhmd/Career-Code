@@ -4,6 +4,7 @@ import AuthContext from "../../contexts/AuthContext";
 
 const Navbar = () => {
   const { user, logOut } = use(AuthContext);
+  
   const links = (
     <>
       <NavLink className="btn" to="/">

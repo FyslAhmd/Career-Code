@@ -10,8 +10,8 @@ const Navbar = () => {
       <NavLink className="btn bg-white text-black md:mr-2" to="/">
         Home
       </NavLink>
-      <NavLink className="btn bg-white text-black md:mr-2" to="/">
-        About
+      <NavLink className="btn bg-white text-black md:mr-2" to="/myApplications">
+        My Applications
       </NavLink>
       <NavLink className="btn bg-white text-black md:mr-2" to="/">
         Contact

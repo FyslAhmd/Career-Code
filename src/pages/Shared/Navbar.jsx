@@ -13,8 +13,11 @@ const Navbar = () => {
       <NavLink className="btn bg-white text-black md:mr-2" to="/myApplications">
         My Applications
       </NavLink>
-      <NavLink className="btn bg-white text-black md:mr-2" to="/">
-        Contact
+      <NavLink className="btn bg-white text-black md:mr-2" to="/addJob">
+        Add Job
+      </NavLink>
+      <NavLink className="btn bg-white text-black md:mr-2" to="/myPostedJobs">
+        My Posted Jobs
       </NavLink>
     </>
   );

@@ -3,9 +3,9 @@ import ApplicationList from "./ApplicationList";
 import AuthContext from "../../contexts/AuthContext";
 
 const myApplicationsFunction = (email) => {
-  return fetch(`http://localhost:5000/applications?email=${email}`).then(
-    (res) => res.json()
-  );
+  return fetch(`http://localhost:5000/applications?email=${email}`, {
+    credentials: "include",
+  }).then((res) => res.json());
 };
 
 const MyApplications = () => {

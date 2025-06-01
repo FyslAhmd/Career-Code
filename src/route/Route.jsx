@@ -17,13 +17,13 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
-        loader: () => fetch("http://localhost:5000/jobs"),
+        loader: () => fetch("https://career-code-server-sage.vercel.app/jobs"),
       },
       {
         path: "/jobs/:id",
         Component: JobDetails,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/jobs/${params.id}`),
+          fetch(`https://career-code-server-sage.vercel.app/jobs/${params.id}`),
       },
       {
         path: "/jobApply/:id",

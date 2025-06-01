@@ -1,7 +1,7 @@
 import React, { use } from "react";
 
-const ApplicationList = ({ myApplicationsFunction }) => {
-  const applications = use(myApplicationsFunction);
+const ApplicationList = ({ myApplicationPromise }) => {
+  const applications = use(myApplicationPromise);
   return (
     <div>
       <h1 className="text-2xl font-bold text-center my-10">

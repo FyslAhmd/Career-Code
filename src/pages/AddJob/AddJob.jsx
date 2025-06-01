@@ -23,7 +23,7 @@ const AddJob = () => {
 
     //save to db
     axios
-      .post("http://localhost:5000/jobs", rest)
+      .post("https://career-code-server-sage.vercel.app/jobs", rest)
       .then((res) => {
         if (res.data.insertedId) {
           console.log("data added successfully");

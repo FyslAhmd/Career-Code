@@ -6,15 +6,20 @@ const MyPostedJobs = () => {
   const [data, setData] = useState([]);
   const { user } = use(AuthContext);
   useState(() => {
+    if (!user?.email || !user?.accessToken) return;
     axios
-      .get(`http://localhost:5000/jobs?email=${user?.email}`)
+      .get(`https://career-code-server-sage.vercel.app/jobs?email=${user?.email}`, {
+        headers: {
+          authorization: `Bearer ${user.accessToken}`,
+        },
+      })
       .then((res) => {
         setData(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [data]);
+  }, [user]);
   return (
     <div>
       <h1>Total Posted Jobs: {data.length}</h1>

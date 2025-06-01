@@ -21,7 +21,7 @@ const JobApply = () => {
       resume,
     };
     axios
-      .post("http://localhost:5000/applications", application)
+      .post("https://career-code-server-sage.vercel.app/applications", application)
       .then((res) => {
         console.log(res.data);
         navigate("/myApplications");
